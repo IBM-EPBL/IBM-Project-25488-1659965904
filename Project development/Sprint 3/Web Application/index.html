@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+    <script src="https://kit.fontawesome.com/8b9cdc2059.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- <script defer src="../static/js/main.js"></script> -->
+    <title>Diabetic Retinopathy Classification</title>
+</head>
+<body>
+    <header id="head" class="header">
+   <section  id="navbar">
+           <h1 class="nav-heading">Diabetic Retinopathy Classification</h1>
+       <div class="nav--items">
+           <ul>
+				<li><a  href="{{ url_for('index')}}">Home</a></li>
+				<li><a href="{{ url_for('login')}}">Login</a></li>
+				<li><a href="{{ url_for('register')}}">Register</a></li>
+               <!-- <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li> -->
+               <li><a href="{{ url_for('login')}}">Prediction</a></li>
+           </ul>
+       </div>
+   </section>
+   <section id="slider">
+    <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+        <ol class="carousel-indicators ">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active "></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="DR kar.jpg" alt="First slide" style="height:500px">
+            </div>
+            
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+   </section>
+</header>
+<section id="about">
+    <div class="top">
+        <h3 class="title text-muted">
+            ABOUT PROJECT
+        </h3>
+        <div class="line"></div>
+    </div>
+<div class="body">
+<div class="left">
+    <h2>Problem:</h2>
+    <p>
+        Diabetic retinopathy is an eye condition that can cause vision loss and blindness in people who have diabetes. It affects blood vessels in the retina (the light-sensitive layer of tissue in the back of your eye).
+
+If you have diabetes, it’s important to get a comprehensive dilated eye exam at least once a year. Diabetic retinopathy may not have any symptoms at first — but finding it early can help you take steps to protect your vision.Analyzing a fundus picture can help identify diabetic retinal disease early To determine whether or not DR is present.To analyse the level of DR.
+
+
+		</p>
+</div>
+<div class="right">
+    <h2>Solution:</h2>
+    <p>
+         DCNNs' strength is
+their layering. A three-dimensional neural
+network is used by a DCNN to process the Red,
+Green, and Blue parts of a picture
+simultaneously. This significantly lowers the
+quantity of artificial neurons required to
+process an image in comparison to conventional
+feed forward neural networks. In order to train
+a classifier, deep convolutional neural networks
+are fed images. The network makes use of a
+mathematical technique called "convolution"
+instead of matrix multiplication. The four stages
+of a convolutional network's architecture are
+convolution, pooling, activation, and fully
+connected.
+    </p>
+</div>
+</div>
+</section>
+
+
+
+
+</body>
+</html>
